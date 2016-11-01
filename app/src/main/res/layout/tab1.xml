@@ -1,0 +1,380 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oświetlenie główne"
+                android:id="@+id/textView3"
+                android:layout_column="12"
+                android:textColor="#000000" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:layout_gravity="left|center_horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="109dp"
+                    android:layout_height="105dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/sypialnia_bulb1"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/off"
+                        android:layout_column="12"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight="0.74"
+                        android:onClick="sypialnia_bulb1" />
+
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/level_125"
+                            android:checked="false"
+                            android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="109dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.15">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_250"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/level_375"
+                            android:checked="false"
+                            android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_500"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_625"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_750"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_875"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/level_1000"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lampka nocna"
+                android:id="@+id/textView8"
+                android:singleLine="false"
+                android:textColor="#000000" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="105dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="test">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="109dp"
+                    android:layout_height="105dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/imageView4"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/off"
+                        android:background="#ffffff"
+                        android:layout_column="12"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight="0.74"
+                        android:onClick="sypialnia_bulb2"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wskaznik_1"
+                        android:layout_weight="0.74"
+                        android:checked="false"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="bulb2_radioGroup"/>
+                </LinearLayout>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_2"
+                    android:checked="false"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_3"
+                    android:checked="false"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_4"
+                    android:checked="false"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_5"
+                    android:checked="false"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_6"
+                    android:checked="false"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_7"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wskaznik_8"
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="bulb2_radioGroup"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rolety"
+                android:id="@+id/textView9"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView8"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/rolety_off"
+                        android:background="#29a9d2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+
+                    <Switch
+                        android:layout_width="144dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/switch3"
+                        android:checked="true"
+                        android:showText="false"
+                        android:textOff="Zasłoń"
+                        android:textOn="Odsłoń"
+                        android:onClick="Sypialnia_rolSwitch" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Urządzenie nr: 1"
+                        android:id="@+id/textView10"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Urządzenie nr: 2"
+                        android:id="@+id/textView11"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Urządzenie nr: 3"
+                        android:id="@+id/textView12"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="330dp"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent">
+
+                    <ToggleButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleButton"
+                        android:checked="false"
+                        android:onClick="urzadzenie1_sypialnia"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent">
+
+                    <ToggleButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleButton2"
+                        android:checked="false"
+                        android:onClick="urzadzenie2_sypialnia"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent">
+
+                    <ToggleButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="New ToggleButton"
+                        android:id="@+id/toggleButton3"
+                        android:checked="false"
+                        android:onClick="urzadzenie3_sypialnia"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

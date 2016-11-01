@@ -1,0 +1,20 @@
+$ cat .gitignore
+*.[oa]
+*~
+*.gradle
+*gradle
+*.properties
+*.iml
+/.idea
+/build
+/.gradle
+/app/build
+/app/libs
+/src/androidTest
+/src/test
+*.bat
+*.pro
+/gradle
+gradlew
+/app/src/androidTest
+/app/src/test

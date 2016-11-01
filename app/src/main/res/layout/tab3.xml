@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f9f9f8">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="13"
+            android:onClick="test_kuchnia">
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageView5"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:src="@drawable/off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oświetlenie główne"
+                android:id="@+id/textView13"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageButton4"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="#f9f9f8"
+                android:src="@drawable/power_off"
+                android:onClick="kuchnia_oswietlenieGlowne"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oświetlenie LED"
+                android:id="@+id/textView14"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textColor="#000000" />
+
+
+
+            <!--android:src="@drawable/fan"-->
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageView7"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:src="@drawable/off" />
+
+            <ImageButton
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageButton5"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:background="#f9f9f8"
+                android:src="@drawable/power_off"
+                android:onClick="kuchnia_LED"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:background="#f0d9d6d6">
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wentylator"
+                android:id="@+id/textView15"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/fan"
+                android:layout_row="7"
+                android:layout_column="0" />
+
+            <ImageButton
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:id="@+id/imageButton6"
+                android:layout_row="7"
+                android:layout_column="2"
+                android:background="#f9f9f8"
+                android:src="@drawable/power_off"
+                android:onClick="Fan_switch"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:background="#f0d9d6d6">
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_row="8"
+                android:layout_column="2"
+                android:background="#f0d9d6d6"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urządzenie nr:1"
+                android:id="@+id/textView16"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:textColor="#000000" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/kuchnia_device2"
+                android:layout_row="9"
+                android:layout_column="2"
+                android:checked="false"
+                android:width="100dp"
+                android:layout_marginLeft="7dp"
+                android:onClick="kuchnia_urzadzenie2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urządzenie nr:2"
+                android:id="@+id/textView17"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:textColor="#000000" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/kuchnia_device1"
+                android:layout_row="11"
+                android:layout_column="2"
+                android:checked="false"
+                android:width="100dp"
+                android:layout_marginLeft="7dp"
+                android:onClick="kuchnia_urzadzenie1"/>
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
